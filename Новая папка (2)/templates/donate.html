@@ -1,0 +1,17 @@
+{% extends "template.html" %}
+
+{% block title %}
+<title>Добавление доната</title>
+{% endblock %}
+
+{% block body %}
+<div class="container">
+    <h1>Добавить доната</h1>
+    <form method="post">
+        <input type="text" class="form-control" name="title" id="title" placeholder="Введите название"><br>
+        <input type="number" class="form-control" name="price" id="price" placeholder="Введите цену"><br>
+        <input type="text" class="form-control" name="info" id="info" placeholder="Введите описание"><br>
+        <button class="btn btn-success" type="submit"> Добавить донат</button>
+    </form>
+</div>
+{% endblock %}
